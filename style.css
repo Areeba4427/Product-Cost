@@ -321,7 +321,10 @@ height: 60px !important;
     height: 60px !important;
    }
 
-   
+button{
+    font-size:12px !important;
+}
+      
 
 }
 .css-ebv3qm .tooltip-button {
