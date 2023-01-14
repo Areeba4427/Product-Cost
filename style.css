@@ -210,7 +210,7 @@ input:first-child {
 
  left:80px !important;
  width: 200px;
-height: 53px;
+height: 58px;
 }
 .ppp span{
  width: 258px !important;
@@ -327,23 +327,6 @@ svg:not(:host).svg-inline--fa {
  display:none;
  padding:0 20px;
 }
-.css-ebv3qm span:after {
- content:'';
- position:absolute;
- bottom:25px; 
- left:50px;
- width:10px;
- height:10px;
- border-bottom:5px solid rgba(255, 255, 255, 0.8);;
- border-right:5px solid rgba(203, 203, 203, 0.8);;
- background:rgba(255, 255, 255, 0.8);;
- left:56%;
- /* margin-left:-10px; */
- -moz-transform:rotate(45deg);
- -webkit-transform:rotate(45deg);
- transform:rotate(45deg);
- z-index: -1;
-}
 
 .blip{
  display: none;
@@ -355,23 +338,6 @@ svg:not(:host).svg-inline--fa {
  display: none;
  height: 30px;
 }
-.pp1 span:after{
- content:'';
- position:absolute;
- bottom:25px; 
- left:120px;
- width:10px;
- height:10px;
- border-bottom:5px solid rgba(255, 255, 255, 0.8);;
- border-right:5px solid rgba(255, 255, 255, 0.8);;
- background:rgba(255, 255, 255, 0.8);;
- left:52%;
- /* margin-left:-10px; */
- -moz-transform:rotate(45deg);
- -webkit-transform:rotate(45deg);
- transform:rotate(45deg);
- z-index: -1;
-}
 
 
 .pp2 span{
@@ -380,25 +346,6 @@ svg:not(:host).svg-inline--fa {
  display: none;
  height: 30px;
 }
-/* .pp2 span:after{
- content:'';
- position:absolute;
- bottom:25px; 
- left:420px;
- width:10px;
- height:10px;
- border-bottom:5px solid rgba(255, 255, 255, 0.8);;
- border-right:5px solid rgba(255, 255, 255, 0.8);;
- background:rgba(255, 255, 255, 0.8);;
- left:52%;
- /* margin-left:-10px; */
- /* -moz-transform:rotate(45deg);
- -webkit-transform:rotate(45deg);
- transform:rotate(45deg); */
- /* z-index: -1; */
-/* }  */
-
-
 
 
 .pp3 span{
@@ -407,24 +354,6 @@ svg:not(:host).svg-inline--fa {
  display: none;
  height: 30px;
 }
-.pp3 span:after{
- content:'';
- position:absolute;
- bottom:25px; 
- left:120px;
- width:10px;
- height:10px;
- border-bottom:5px solid rgba(255, 255, 255, 0.8);
- border-right:5px solid rgba(255, 255, 255, 0.8);
- background:rgba(255, 255, 255, 0.8);
- left:52%;
- /* margin-left:-10px; */
- -moz-transform:rotate(45deg);
- -webkit-transform:rotate(45deg);
- transform:rotate(45deg);
- z-index: -1;
-}
-
 
 
 .pp4 span{
