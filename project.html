@@ -503,7 +503,7 @@ svg:not(:host).svg-inline--fa {
                 </div>
             </label>
 
-            <input type="text" id="name">
+            <input type="text" id="name" onfocus="clean(this)">
 
 
 
@@ -518,7 +518,7 @@ svg:not(:host).svg-inline--fa {
                             class="chakra-button tooltip-button css-17p4kgf" onmouseover="hover(2)"
                             onmouseleave="dis(2)"><div class="question-mark"></div></button><span class="blip" id="display2">Quantity purchased</span></div>
                 </label>
-                <input type="number" id="quan">
+                <input type="number" id="quan" onfocus="clean(this)">
             </div>
 
 
@@ -530,7 +530,7 @@ svg:not(:host).svg-inline--fa {
                             class="chakra-button tooltip-button css-17p4kgf" onmouseover="hover(3)"
                             onmouseleave="dis(3)"><div class="question-mark"></div></button><span class="blip" id="display3">Total product cost</span></div>
                 </label>
-                <input type="number" id="prod">
+                <input type="number" id="prod" onfocus="clean(this)">
             </div>
         </div>
         <div class="input-labels">
@@ -542,7 +542,7 @@ svg:not(:host).svg-inline--fa {
                             class="chakra-button tooltip-button css-17p4kgf" onmouseover="hover(4)"
                             onmouseleave="dis(4)"><div class="question-mark"></div></button><span class="blip" id="display4">Shipping fee you paid to get your product</span></div>
                 </label>
-                <input type="number" id="ship">
+                <input type="number" id="ship" onfocus="clean(this)">
             </div>
 
 
@@ -554,7 +554,7 @@ svg:not(:host).svg-inline--fa {
                             class="chakra-button tooltip-button css-17p4kgf" onmouseover="hover(5)"
                             onmouseleave="dis(5)"><div class="question-mark"></div></button><span class="blip" id="display5">Cost to package your product for resale</span></div>
                 </label>
-                <input type="number" id="pckg">
+                <input type="number" id="pckg" onfocus="clean(this)">
             </div>
 
         </div>
@@ -570,7 +570,7 @@ svg:not(:host).svg-inline--fa {
 
 
                 </label>
-                <input type="number" id="tax">
+                <input type="number" id="tax" onfocus="clean(this)">
             </div>
 
 
@@ -584,7 +584,7 @@ svg:not(:host).svg-inline--fa {
                             onmouseleave="dis(7)"><div class="question-mark"></div></button><span class="blip" id="display7">Duty paid to receive product</span></div>
 
                 </label>
-                <input type="number" id="duty">
+                <input type="number" id="duty" onfocus="clean(this)">
             </div>
         </div>
 
@@ -693,7 +693,9 @@ function calculate() {
     // return total;
 
 }
-
+function clean(p){
+    p.value = "";
+}
 
 function hover(n) {
 
