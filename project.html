@@ -97,23 +97,6 @@ form {
   
 }
 
-#bottom-screen{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
- /* position:relative; */
- position: fixed;
- bottom: 0;
- width: 100%;
- padding-right: 100px !important;
- /* padding-bottom: 20px; */
-}
-.logo{
-
-    height: 130px;
-    width: 120px;
-    margin-top:-60px !important;
-}
 a{
     text-decoration: none;
     color: #ffffff !important;
@@ -163,29 +146,11 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
+/* #af9951 */
 /* 
 ::placeholder{
  color: #e5e5e5;
 } */
-button {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 35%;
-    background-color: #af9951;
-    color: #080710;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: 600;
-    border-radius: 5px;
-    cursor: pointer;
-   margin-left: 34%;
-}
-
-button:hover {
-    background-color: #B08E21;
-    transition: 0.5s ease-in-out;
-}
 
 .input-labels {
     display: flex;
@@ -225,6 +190,14 @@ input:first-child {
      margin-top: 250px;
 
  }
+ .question-mark {
+  width: 30px !important;
+  height: 30px !important;
+ }
+
+ .center-button-container{
+    height: 15vh;
+ }
 
  .input-labels {
      display: flex;
@@ -233,9 +206,6 @@ input:first-child {
      
  }
 
- button {
-    width: 35% !important; 
- }
 
  .shape{
     display: none !important;
@@ -288,11 +258,11 @@ top:310px !important;
 }
 
 }
+
+
 @media  all and  (max-width: 768px){
 
-    #bottom-screen{
-        margin-bottom: -50px !important;
-    }
+
 
 }
 @media  all and  (max-width: 467px){
@@ -354,10 +324,7 @@ height: 60px !important;
     left:85px !important;
     height: 60px !important;
    }
-button{
-    font-size:12px !important;
-}
-   
+  
 
 }
 .css-ebv3qm .tooltip-button {
@@ -475,6 +442,65 @@ svg:not(:host).svg-inline--fa {
  display: none;
  height: 37px;
 }
+.disclaimer{
+    position: absolute !important;
+    margin-top:-32px !important;
+    margin-left: 220px !important;
+}
+@media (max-width: 600px) { /* adjust as needed */
+    .container {
+        top: 10px; /* adjust as needed */
+    }
+}
+
+#container{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    position: relative;
+    
+}
+.left{
+    align-self: flex-start;
+    max-width: 100%;
+}
+.logo{
+    height:110px;
+    width:100px;
+}
+.right{
+    margin-left: auto;
+    position: relative;
+    top: -40px; 
+    align-self: flex-end;
+}
+.center-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh; /* adjust as needed */
+}
+
+.golden-button{
+    background-color: hsl(46, 37%, 50%);
+    box-shadow: 2px 2px 2px gray;
+    color: black;
+    text-align: center;
+    /* align-self: center; */
+    font-size:20px;
+    padding:14px;
+    border-radius:5px;
+    margin:5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    
+}
+.golden-button:hover {
+    background-color: hsl(46, 60%, 41%);
+    color:black;
+    transform: translateY(5px);
+}
+
 
     </style>
     <title>Product Cost Calculator</title>
@@ -485,10 +511,10 @@ svg:not(:host).svg-inline--fa {
     <div onclick="void(0);">
 
     <form name="myform" class="form1">
-        <div id="modal-text" style="display:none;font-size: 20px;color: white;text-align: center;font-weight: 600;">
+        <div id="modal-text" class="disclaimer" style="display:none;font-size: 15px;color:red !important;text-align: center;font-weight: 300;">
             <p>Please fill product name / Quantity</p>
             </div>
-            <div id="modal-text2" style="display:none;font-size: 20px;color: white;text-align: center;font-weight: 600;">
+            <div id="modal-text2" class="disclaimer" style="display:none;font-size: 15px;color:red !important;text-align: center;font-weight: 300;">
                 <p>Please fill at least one more field to calculate.</p>
                 </div>
         <h3 id="myhead">Product Cost Calculator</h3>
@@ -590,18 +616,24 @@ svg:not(:host).svg-inline--fa {
 
         <div id="dynamic">
         </div>
-        <button type="button" onfocus="calculate()" onclick="calculate()" id="cal">Calculate</button>
-
-        <div id="bottom-screen">
-
-            <img src="https://i.ibb.co/Ssv3ptd/HOW-2-ECOM-logo-B15.png" alt="HOW-2-ECOM-logo-B15" border="0" class="logo">
-            <a href="https://how2ecom.com/" target="_blank" id="link">www.how2ecom.com</a>
+        <div class="center-button-container">
+        <button type="button" onfocus="clear()" onclick="calculate()" id="cal" class="golden-button">Calculate</button>
+    </div>
+        <div id="container">
+            <div class="left">
+                <img src="https://i.ibb.co/Ssv3ptd/HOW-2-ECOM-logo-B15.png" alt="HOW-2-ECOM-logo-B15"  class="logo">
+            </div>
+            <div class="right">
+                <a href="https://how2ecom.com/" target="_blank" id="link" >www.how2ecom.com</a>
+            </div>
 
         </div>
     </form>
 
 </div>
     <script>
+
+
  var p = document.getElementById("cal");
 p.addEventListener('touchstart', () => {});
 p.addEventListener('touchend', () => {});
