@@ -14,3 +14,7 @@ To use express and node in a project.  First time!!!
 
 4. To create new branch
 git checkout -b name
+
+5. git add -A
+git commit -m "Git"
+git push
