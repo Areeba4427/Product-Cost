@@ -1,0 +1,22 @@
+{
+  "name": "product-cost",
+  "version": "1.0.0",
+  "description": "calculation-project on JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Areeba4427/Product-Cost.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Areeba4427/Product-Cost/issues"
+  },
+  "homepage": "https://github.com/Areeba4427/Product-Cost#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
